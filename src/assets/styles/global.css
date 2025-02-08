@@ -1,0 +1,149 @@
+/* global.css */
+body {
+  background: #121212;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  flex: 1;
+  margin-top: 60px; /* Push content down to avoid overlap with fixed navbar */
+}
+
+.left {
+  flex: 1;
+}
+
+.name {
+  color: #ffeaea;
+  font-size: 3rem;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+.name:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.bio {
+  color: #ffeaea;
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.bio:hover {
+  color: #ffffff;
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+  align-items: center;
+}
+
+.image-container {
+  width: 500px;
+  height: auto;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+}
+
+/* src/assets/styles/global.css */
+/* global.css */
+body {
+background: #1e1e1e;  /* Dark background using the darkest shade from the palette */
+color: white;
+height: 100vh;
+display: flex;
+justify-content: flex-start;  /* Align content from the top */
+flex-direction: column;  /* Stack content vertically */
+overflow-y: auto;
+margin-top: 60px;  /* Add top margin for navbar space */
+
+/* Modern gradient with dark grey and blue tones */
+background: linear-gradient(135deg, rgba(0, 122, 204, 0.8) 30%, rgba(62, 62, 66, 0.9) 70%) center, radial-gradient(circle, rgba(45, 45, 48, 0.5) 15%, rgba(37, 37, 38, 0.5) 60%, rgba(30, 30, 30, 0.8) 100%) center/150px repeat;
+background-size: 150px 150px, 200px 200px;  /* Mixed gradient and circular patterns */
+transition: background 1s ease-in-out;  /* Smooth background transition */
+}
+
+/* Add hover effect for brightening or changing color of squares */
+body:hover {
+background: linear-gradient(135deg, rgba(0, 122, 204, 0.9) 30%, rgba(62, 62, 66, 1) 70%) center, radial-gradient(circle, rgba(45, 45, 48, 0.6) 15%, rgba(37, 37, 38, 0.6) 60%, rgba(30, 30, 30, 1) 100%) center/150px repeat;
+background-size: 150px 150px, 200px 200px;
+/* Change the gradient colors to create a brighter effect on hover */
+transition: background 0.5s ease-in-out;  /* Faster transition for hover effect */
+}
+
+body::after {
+content: "";
+position: absolute;
+top: 20%;
+left: 30%;
+width: 500px;
+height: 500px;
+background: rgba(0, 122, 204, 0.4);  /* Blue background for the pulsing circle */
+border-radius: 50%;
+z-index: -1;
+animation: pulse 10s infinite;  /* Add pulsing animation for dynamic effect */
+}
+
+@keyframes pulse {
+0% {
+  transform: scale(1);
+  opacity: 0.4;
+}
+50% {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+100% {
+  transform: scale(1);
+  opacity: 0.4;
+}
+}
+
+
+
+.navbar {
+position: fixed;  /* Keep navbar fixed at the top */
+top: 0;
+width: 100%;
+z-index: 9999;  /* Ensure navbar stays on top of all content */
+}

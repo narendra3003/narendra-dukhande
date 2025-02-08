@@ -1,0 +1,101 @@
+.extracurriculars-container {
+    padding: 50px;
+    background: rgba(26, 26, 26, 0.85); /* Glass effect background */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #f5f5f5; /* Soft White */
+    margin-bottom: 20px;
+  }
+  
+  .extracurricular-item {
+    background: rgba(34, 34, 34, 0.7);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    margin: 10px auto;
+    text-align: left;
+  }
+  
+  .extracurricular-item:hover {
+    transform: scale(1.05);
+    background: rgba(34, 34, 34, 0.9);
+  }
+  
+  .extracurricular-item h3 {
+    font-size: 1.5rem;
+    color: #e0e0e0; /* Softer White */
+    margin-bottom: 10px;
+  }
+  
+  .extracurricular-item p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin: 5px 0;
+  }
+  
+  .extracurricular-item:hover p {
+    color: white;
+  }
+  
+  .extracurricular-item ul {
+    padding-left: 20px;
+    color: #f3f4f6;
+  }
+  
+  .extracurricular-item li {
+    list-style-type: "✔ ";
+    margin: 5px 0;
+  }
+  
+  .extracurricular-item a {
+    color: #f5f5f5;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .extracurricular-item a:hover {
+    color: #d4d4d4;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .extracurriculars-container {
+      padding: 30px;
+      border-radius: 10px;
+    }
+  
+    .extracurricular-item {
+      width: 90%;
+      border-radius: 10px;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .extracurricular-item h3 {
+      font-size: 1.3rem;
+    }
+  
+    .extracurricular-item p {
+      font-size: 1rem;
+    }
+  }
+  

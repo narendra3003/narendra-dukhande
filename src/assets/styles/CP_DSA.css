@@ -1,0 +1,121 @@
+.cp-dsa-container {
+    padding: 50px;
+    background: rgba(26, 26, 26, 0.85);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Updated Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    color: #f0f0f0; /* Soft white */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2); /* Soft glow */
+  }
+  
+  /* Featured Profile Card */
+  .featured-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .featured-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .featured-card-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .featured-img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .featured-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Profile Grid */
+  .profile-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Profile Cards */
+  .profile-card {
+    background: rgba(34, 34, 34, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.1);
+    background: rgba(34, 34, 34, 0.9);
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .profile-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  .profile-card:hover p {
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cp-dsa-container {
+      padding: 30px;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .featured-img {
+      width: 140px;
+    }
+  
+    .profile-card {
+      width: 130px;
+    }
+  
+    .profile-img {
+      width: 80px;
+    }
+  
+    .profile-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
