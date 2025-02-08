@@ -8,12 +8,15 @@ const Home = () => {
         <h1 className="name">Narendra Dukhande</h1>
         <p className="bio">Passionate Developer | DSA & AI Enthusiast</p>
         <a 
-  href="/resume.pdf" 
+  href="https://drive.google.com/file/d/1w98uybPI31MNSrC97hiFmFs2IbPKvQ2p/view?usp=sharing" 
   download 
+  target="_blank" 
+        rel="noopener noreferrer"
   className="resume-button"
 >
-  📄 Download Resume
+  📄 View Resume
 </a>
+
 
       </div>
       <div className="right">
