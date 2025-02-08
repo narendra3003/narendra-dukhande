@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';  // Importing icons
+import "../assets/styles/Navbar.css"; // Import CSS file for styling
 
 const Navbar = () => {
   return (
